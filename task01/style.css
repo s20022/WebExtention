@@ -1,0 +1,68 @@
+@charset "utf-8";
+h1.main-style {
+	padding: 0.5em;
+	color: #ffffff;
+	background: #ff5010;
+	border-bottom: solid 3px #ff5010;
+	font-weight: normal;
+}
+
+h2.main-style {
+	padding: 0.25em 0.5em;
+	color: #ff5010;
+	background: transparent;
+	border-left: solid 5px #ff5010;
+}
+
+h3.main-style {
+	margin-top: 2.5em;
+	margin-bottom: 2em;
+	position: 0.6em;
+	background: #ff5010;
+}
+
+h3.main-style:after {
+  position: absolute
+  content: '';
+  top: 100%;
+  left :30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #ff5010;
+  width: 0;
+  height: 0;
+}
+
+hr {
+	border-top: 3px solid #ff5010;
+	margin-top: 3rem;
+	margin-bottom 3rem;
+}
+
+/*ここからメイン外*/
+
+#task01-b table {
+	border-collapse: collapse;
+}
+#task01-b caption {
+	color: #000000;
+}
+#task01-b th, #task01-b td {
+	border: 1px solid #000000;
+	padding: 8px;
+}
+#task01-b th {
+	color: #ffffff;
+	background: #ff5010;
+}
+#task01-c p {
+	text-align: justify;
+	line-height: 1.5em;
+	font-size: 1em
+}
+#task01-d blockquote {
+	border-radius: 10px;
+	margin: 0;
+	padding: 32px;
+	width: 300px;
+	background: #cccccc
+}
