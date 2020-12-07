@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シングルコラムレイアウト</title>
+    <title>ナビゲーションメニューを作成する</title>
     <link rel="stylesheet" herf="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,24 +12,34 @@
     <div class="container">
         <div class="header-inner">
             <!-- ヘッダーの要素 -->
-            <div class="logo">Header</div>
+            <button class="hamburger" id="mobile-menu"></button>
         </div><!-- /.heade-inner -->
 
     </div><!-- /.container -->
 </header>
 <nav>
     <div class="container">
-        <div class="nav-inner">ホーム 会社案内 製品案内 サポート お問い合わせ</div>
+        <ul class="navbar">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">会社案内</a></li>
+            <li><a href="#">製品案内</a></li>
+            <li><a href="#">サポート</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+
+        </ul>
+            
     </div>
 </nav>
 <section>
     <div class="container">
         <main>
-            <div class="main-inner">
                 <!-- コンテンツの要素 -->
                 <p class="main-title">Main</p>
-            </div><!-- /.main-inner -->
         </main>
+        <aside class="sidebar">
+            <!-- サイドバー1の要素 -->
+            sidebar
+        </aside><!-- / .sidebar -->
     </div><!-- /.container -->
 </section>
 <footer>
@@ -40,5 +50,6 @@
         </div><!-- /.footer-inner -->
     </div><!-- /.container --> 
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -6,13 +6,17 @@ body {
 }
 .container {
     margin: 0 auto 0 auto;
-    padding: 0 16px 0 16x;
     max-width: 1000px;
+    border: solid 1px #ff0000;
+}
+section .container {
+    display: flex;
+    flex-flow: column;
 }
 main p:last-child{
     margin-bottom: 0;
 }
-main-title {
+.main-title {
     margin: 0;
 }
 .copyright {
@@ -43,7 +47,7 @@ nav {
     background: #fffde3;
     height: 400px;
 }
-.sidever-inner {
+.sidebar-inner {
     padding: 20px 10px 20px 10px;
     background: #c0f5b9;
 }
@@ -53,4 +57,21 @@ footer {
 .footer-inner {
     padding: 20px 16px 10px 16px;
     background: #bad7f5;
+}
+@media only screen and (min-width: 768px) {
+    section .container {
+        flex-flow: row;
+    }
+    main {
+        flex: 1 1 auto;
+        order: 2; /* orderで並び順を設定 */
+    }
+    .sidebar {
+        flex: 0 0 340px;
+        order: 1; /* orderで並び順を設定 */
+    }
+    .sidebar2 {
+        flex: 0 0 250px;
+        order: 3; /* orderで並び順を設定 */
+    }
 }
